@@ -2,23 +2,15 @@
 
 {% block title %}Accueil{% endblock %}
 
+
 {% block body %}
 
-<script src="https://kit.fontawesome.com/d518001464.js" crossorigin="anonymous"></script>
-
-<div>
-
   {% if app.user %}
-  <h1> Bienvenue {{app.user.username}} ! </h1>
+<h1> Bienvenue {{app.user.username}} ! </h1>
   {% endif %}
 
-  <h1> Vous êtes sur la page d'accueil du futur site web pour les salariés de la Maison des Elèves </h1>
-    <h2> Ce site est développé par GUERIN Alexis et PERRIN Marc </h2>
-</div>
+<br>
 
-<div class="alert alert-primary" role="alert">
-  Le site est toujours en cours de développement, <a href="#" class="alert-link">contacter</a> les développeurs pour plus d'informations
-</div>
 <div class="container-fluid btn-toolbar btn-group btn-group-lg">
   <div class="container">
     <div class="row">
@@ -53,13 +45,15 @@
           Espace Veilleurs
         </div>
         <div class="row justify-content-center">
-          <button type="button" class="btn btn-lg fas fa-eye" onclick="window.location.href='{{path('veilleur')}}'""></button>
+          <button type="button" class="btn btn-lg fas fa-eye" onclick="window.location.href='{{path('veilleur')}}'"> </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<br>
 
-</div>
+{{ include('booking/calendar.html.twig')}}
+
 {% endblock %}

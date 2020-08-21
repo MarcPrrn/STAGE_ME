@@ -18,6 +18,8 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+
 
 class RegistrationFormType extends AbstractType
 {
@@ -25,8 +27,7 @@ class RegistrationFormType extends AbstractType
     {
         $builder
             ->add('username')
-            ->add('email')
-            /* ->add('position') */
+            ->add('email',EmailType::class)
             ->add('position',ChoiceType::class, [
               'choices' => [
               'Direction'   => 'Direction',

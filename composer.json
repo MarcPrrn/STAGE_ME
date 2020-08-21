@@ -30,6 +30,7 @@
         "symfony/web-link": "4.4.*",
         "symfony/yaml": "4.4.*",
         "symfonycasts/verify-email-bundle": "^1.0",
+        "toiba/fullcalendar-bundle": "^6.2",
         "twbs/bootstrap": "4.*"
     },
     "require-dev": {

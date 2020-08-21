@@ -21,9 +21,6 @@ class AccueilController extends AbstractController
         //dump($this=getUser()->getUsername());
         //$username=getUsername($user);
         //dump($username->getUsername(getUsers()));
-        return $this->render('accueil/index.html.twig', [
-            'controller_name' => 'AccueilController',
-            //'username' => $user
-            ]);
+        return $this->render('accueil/index.html.twig');
     }
 }

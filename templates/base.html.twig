@@ -2,20 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" type="image/png" href="{{ asset('img/logo.png')}}">
-        <script src="https://kit.fontawesome.com/d518001464.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/d518001464.js" crossorigin="anonymous"></script>
         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
         <link rel="stylesheet" href="{{ asset('css/base.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/header.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/topic.css') }}" />
+
 
         <title>{% block title %} Accueil {% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
-
     <body>
+
               <div class="header">
 
                 <div class="logo" ></div>
@@ -46,23 +47,26 @@
                     {% endif %}
                     </div>
 
+                    </div>
+                    <div class="header__slogan">
+                      <h1 class="header__slogan--title"> PORTAIL ME </h1>
+                    </div>
                   </div>
-                  <div class="header__slogan">
-                    <h1 class="header__slogan--title"> Portail ME </h1>
-                  </div>
-                </div>
-
-              </div>
-
-      <div class="container">
 
 
-        {% block body %}{% endblock %}
-        {% block javascripts %}
-        {% endblock %}
+                    </div>
 
-      </div>
+            <div class="container">
 
 
-    </body>
-</html>
+              {% block body %}
+
+              {% endblock %}
+              {% block javascripts %}
+                <script src="https://kit.fontawesome.com/43ab2df456.js" crossorigin="anonymous"></script>
+              {% endblock %}
+
+            </div>
+
+          </body>
+      </html>

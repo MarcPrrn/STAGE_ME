@@ -1,0 +1,143 @@
+.bloc-pre-pagi-forum.bloc-outils-top {
+     border-bottom: .0625rem solid #cdcdcd;
+     padding-bottom: 1rem;
+     margin-bottom: .625rem;
+ }
+ .bloc-pre-pagi-forum {
+     overflow: hidden;
+     text-align: center;
+ }
+
+ .bloc-rech-forum {
+   display: inline-block;
+   text-align: center;
+}
+ .bloc-rech-forum .btn-lancer-rech {
+   border: .0625rem solid #b4b1b1;
+   border-radius: .125rem;
+   height: 1.75rem;
+   line-height: 1;
+   width: 2.1875rem;
+   padding: 0;
+}
+
+.bloc-rech-forum .txt-search {
+   width: 12rem;
+}
+.bloc-rech-forum .btn-lancer-rech, .bloc-rech-forum .select-search, .bloc-rech-forum .txt-search {
+   display: inline-block;
+   margin-right: .3125rem;
+   vertical-align: bottom;
+}
+.bloc-rech-forum .select-search {
+   width: 5.3125rem;
+}
+.bloc-rech-forum .select-search, .bloc-rech-forum .txt-search {
+   border: .0625rem solid #d0d0d9;
+   height: 1.75rem;
+   padding: .1875rem;
+   color: #7f7f7f;
+}
+.bloc-pre-pagi-forum .bloc-pre-right {
+   float: right;
+}
+
+.btn-actu-new-list-forum {
+   border: .0625rem solid #5d6871;
+   background: #6c7984;
+   color: #fff;
+}
+.btn-actualiser-forum {
+   min-width: 5.25rem;
+}
+.btn-actu-new-list-forum, .btn-forum-modo, .btn-repondre-msg, .btn-select-msg-modo, .btn-sondage-forum, .btn-topic-resolu {
+   text-transform: uppercase;
+   font-weight: 700;
+   padding: 0;
+   font-size: .625rem;
+   height: 1.75rem;
+   min-width: 6.375rem;
+   line-height: 1.6875rem;
+   border-radius: .125rem;
+}
+.bloc-pre-pagi-forum .bloc-pre-left {
+   float: left;
+}
+/*font Awesome http://fontawesome.io*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Comment List styles*/
+.comment-list .row {
+ margin-bottom: 0px;
+}
+.comment-list .panel .panel-heading {
+ padding: 4px 15px;
+ position: absolute;
+ border:none;
+ /*Panel-heading border radius*/
+ border-top-right-radius:0px;
+ top: 1px;
+}
+.comment-list .panel .panel-heading.right {
+ border-right-width: 0px;
+ /*Panel-heading border radius*/
+ border-top-left-radius:0px;
+ right: 16px;
+}
+.comment-list .panel .panel-heading .panel-body {
+ padding-top: 6px;
+}
+.comment-list figcaption {
+ /*For wrapping text in thumbnail*/
+ word-wrap: break-word;
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) {
+ .comment-list .arrow:after, .comment-list .arrow:before {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent;
+ }
+ .comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+   border-left: 0;
+ }
+ /*****Left Arrow*****/
+ /*Outline effect style*/
+ .comment-list .panel.arrow.left:before {
+   left: 0px;
+   top: 30px;
+   /*Use boarder color of panel*/
+   border-right-color: inherit;
+   border-width: 16px;
+ }
+ /*Background color effect*/
+ .comment-list .panel.arrow.left:after {
+   left: 1px;
+   top: 31px;
+   /*Change for different outline color*/
+   border-right-color: #FFFFFF;
+   border-width: 15px;
+ }
+ /*****Right Arrow*****/
+ /*Outline effect style*/
+ .comment-list .panel.arrow.right:before {
+   right: -16px;
+   top: 30px;
+   /*Use boarder color of panel*/
+   border-left-color: inherit;
+   border-width: 16px;
+ }
+ /*Background color effect*/
+ .comment-list .panel.arrow.right:after {
+   right: -14px;
+   top: 31px;
+   /*Change for different outline color*/
+   border-left-color: #FFFFFF;
+   border-width: 15px;
+ }
+}
+.comment-list .comment-post {
+ margin-top: 6px;
+}
